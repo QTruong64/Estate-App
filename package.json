@@ -2,7 +2,13 @@
   "dependencies": {
     "@prisma/client": "^5.11.0",
     "bcrypt": "^5.1.1",
-    "mongodb": "^6.5.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.5.0"
+  },
+  "devDependencies": {
+    "console-ninja": "^1.0.0",
     "prisma": "^5.11.0"
   }
 }
