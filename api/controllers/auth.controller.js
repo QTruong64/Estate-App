@@ -53,14 +53,14 @@ export const login = async (req, res) => {
       // res.setHeader("Set-Cookie", "test=" + "myValue").json("success")
     
   
-      // const token = jwt.sign(
-      //   {
-      //     id: user.id,
+      const token = jwt.sign(
+        {
+          id: user.id,
       //   //   isAdmin: false,
-      //   },
-      //   process.env.JWT_SECRET_KEY,
-      //   { expiresIn: age }
-      // );
+        },
+        process.env.JWT_SECRET_KEY,
+        // { expiresIn: age }
+      )
       const age = 1000 * 60 * 60 * 24 * 7;
       // const { password: userPassword, ...userInfo } = user;
   
